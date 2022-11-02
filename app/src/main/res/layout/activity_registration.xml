@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Linear Layout with vertical orientation and other properties -->
+<LinearLayout xmlns:android="http:// schemas.android.com/apk/res/android"
+    xmlns:android2="http://schemas.android.com/apk/res/android"
+    xmlns:app="http:// schemas.android.com/apk/res-auto"
+    xmlns:tools="http:// schemas.android.com/tools"
+    xmlns:tools2="http://schemas.android.com/tools"
+    android2:layout_width="match_parent"
+    android2:layout_height="match_parent"
+    android2:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".RegistrationActivity"
+    tools2:ignore="NamespaceTypo">
+
+    <!-- TextView for heading -->
+    <TextView
+        android2:layout_height="wrap_content"
+        android2:layout_width="wrap_content"
+        android:text="Register" />
+
+    <!-- Edit text for email -->
+    <EditText
+        android:hint="Enter your Email"
+        android:id="@+id/email"
+        android2:layout_height="wrap_content"
+        android2:layout_width="match_parent" />
+
+    <!-- Edit text for password -->
+    <EditText
+        android:hint="Enter your Password"
+        android:id="@+id/passwd"
+        android:inputType="textPassword"
+        android2:layout_height="wrap_content"
+        android2:layout_width="match_parent" />
+
+    <!-- Button for register with text "Register" -->
+    <Button
+        android:id="@+id/btnregister"
+        android2:layout_height="wrap_content"
+        android2:layout_width="match_parent"
+        android:text="Register" />
+
+    <!-- ProgressBar for loading time -->
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android2:layout_height="wrap_content"
+        android2:layout_width="wrap_content"
+        android:visibility="gone" />
+</LinearLayout>
